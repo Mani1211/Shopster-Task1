@@ -56,10 +56,10 @@ function chooseWinner(selected) {
         score = score;
         playerScore.textContent = score;
       } else {
+        result.textContent = "You Lose";
         if (score > 0) {
           score = score - 1;
           playerScore.textContent = score;
-          result.textContent = "You Lose";
         }
       }
       break;
@@ -73,10 +73,10 @@ function chooseWinner(selected) {
         playerScore.textContent = score;
         result.textContent = "Drawn";
       } else {
+        result.textContent = "You Lose";
         if (score > 0) {
           score = score - 1;
           playerScore.textContent = score;
-          result.textContent = "You Lose";
         }
       }
 
@@ -91,10 +91,10 @@ function chooseWinner(selected) {
         playerScore.textContent = score;
         result.textContent = "Drawn";
       } else {
+        result.textContent = "You Lose";
         if (score > 0) {
           score = score - 1;
           playerScore.textContent = score;
-          result.textContent = "You Lose";
         }
       }
 
@@ -109,10 +109,10 @@ function chooseWinner(selected) {
         playerScore.textContent = score;
         result.textContent = "Drawn";
       } else {
+        result.textContent = "You Lose";
         if (score > 0) {
           score = score - 1;
           playerScore.textContent = score;
-          result.textContent = "You Lose";
         }
       }
 
@@ -127,10 +127,10 @@ function chooseWinner(selected) {
         playerScore.textContent = score;
         result.textContent = "Drawn";
       } else {
+        result.textContent = "You Lose";
         if (score > 0) {
           score = score - 1;
           playerScore.textContent = score;
-          result.textContent = "You Lose";
         }
       }
   }
