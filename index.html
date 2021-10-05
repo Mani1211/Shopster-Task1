@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="App-header">
+      <div class="gamename-container">
+        <img src="./images/logo-bonus.svg" alt="logo" />
+        <div class="score-container">
+          <h2>score</h2>
+          <h6 class="player-score">17</h6>
+        </div>
+      </div>
+
+      <div class="gameicons-container">
+        <div class="pentagon-container">
+          <img src="./images/bg-pentagon.svg" class="pentagon" alt="logo" />
+
+          <div class="icon-container rock rock-1">
+            <img
+              src="./images/icon-rock.svg"
+              class="gameplay-icon"
+              alt="logo"
+            />
+          </div>
+          <div class="icon-container paper paper-1">
+            <img
+              src="./images/icon-paper.svg"
+              class="gameplay-icon"
+              alt="logo"
+            />
+          </div>
+          <div class="icon-container scissors scissors-1">
+            <img
+              src="./images/icon-scissors.svg"
+              class="gameplay-icon"
+              alt="logo"
+            />
+          </div>
+          <div class="icon-container spock spock-1">
+            <img
+              src="./images/icon-spock.svg"
+              class="gameplay-icon"
+              alt="logo"
+            />
+          </div>
+          <div class="icon-container lizard lizard-1">
+            <img
+              src="./images/icon-lizard.svg"
+              class="gameplay-icon"
+              alt="logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="step-2">
+        <div class="selected-icon">
+          <img
+            src="./images/icon-rock.svg"
+            class="gameplay-icon-selected"
+            alt="logo"
+          />
+        </div>
+        <div class="result-container">
+          <h1 class="result">You Lose</h1>
+          <button class="play-again">Play again</button>
+        </div>
+        <div class="selected-icon">
+          <img
+            src="./images/icon-paper.svg"
+            class="computer-icon-selected"
+            alt="logo"
+          />
+        </div>
+      </div>
+      <div class="rules">
+        <h2>Rules</h2>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+<!-- <h1>{score}</h1>
+        <div>
+          <img
+            src={Rock}
+            className="App-logo"
+            alt="logo"
+            onClick={() => {
+              selectPoint("Rock");
+            }}
+          />
+          <img
+            src={Paper}
+            className="App-logo"
+            alt="logo"
+            onClick={() => {
+              selectPoint("Paper");
+            }}
+          />
+          <img
+            src={Scissor}
+            className="App-logo"
+            alt="logo"
+            onClick={() => {
+              selectPoint("Scissor");
+            }}
+          />
+          <img
+            src={Spock}
+            className="App-logo"
+            alt="logo"
+            onClick={() => {
+              selectPoint("Spock");
+            }}
+          />
+          <img
+            src={Lizard}
+            className="App-logo"
+            alt="logo"
+            onClick={() => {
+              selectPoint("Lizard");
+            }}
+          />
+        </div>
+
+        <div>
+          {selectedLogo && (
+            <img src={selectedLogo} className="App-logo" alt="logo" />
+          )}
+          {compImage && <img src={compImage} className="App-logo" alt="logo" />}
+        </div> -->

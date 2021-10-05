@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.App-header {
+  background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gamename-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 5px solid hsl(217, 16%, 45%);
+  width: 50vw;
+  border-radius: 0.8rem;
+  margin-bottom: 3rem;
+}
+.rules {
+  position: absolute;
+  border: 2px solid hsl(217, 16%, 45%);
+  z-index: 10;
+  right: 3%;
+  bottom: 3%;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 0.8rem;
+}
+.score-container {
+  background-color: #fff;
+  padding: 0.3rem 2rem;
+  display: flex;
+  border-radius: 0.8rem;
+  flex-direction: column;
+}
+.score-container h2 {
+  align-self: flex-start;
+  color: hsl(229, 64%, 46%);
+  font-size: 1.5rem;
+}
+.score-container h6 {
+  align-self: center;
+  padding: 1.4rem 0;
+  font-size: 3.3rem;
+  font-weight: bolder;
+  color: hsl(229, 25%, 31%);
+}
+.pentagon-container {
+  position: relative;
+}
+
+.pentagon {
+  height: 17rem;
+  width: 25rem;
+}
+
+.gameplay-icon {
+  width: 70%;
+  height: 70%;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+.icon-container {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.selected-icon {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 1rem 2rem;
+  position: relative;
+  justify-content: center;
+}
+.gameplay-icon-selected,
+.computer-icon-selected {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+/* .win::before {
+  content: "";
+  position: absolute;
+  background-color: aqua;
+  border-radius: 20px;
+  padding: 15rem;
+} */
+.rock-1 {
+  position: absolute;
+  bottom: -10%;
+  right: 10%;
+  z-index: 10;
+}
+.paper-1 {
+  position: absolute;
+  bottom: 40%;
+  right: -8%;
+  z-index: 10;
+}
+.lizard-1 {
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  z-index: 10;
+}
+.spock-1 {
+  position: absolute;
+  z-index: 10;
+  top: 28%;
+  left: -5%;
+}
+.scissors-1 {
+  top: -10%;
+  right: 38%;
+  z-index: 10;
+  position: absolute;
+}
+.rock {
+  background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+.paper {
+  background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.lizard {
+  background: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+.spock {
+  background: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+.scissors {
+  background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.step-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.result-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.result {
+  color: #fff;
+  padding: 5px 0;
+  font-size: 2.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.play-again {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  color: #333;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
